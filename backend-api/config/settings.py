@@ -136,3 +136,11 @@ MEDIA_URL = "/media/"
 AUTH_USER_MODEL = "users.User"
 
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
+
+# Django Rest Framework
+
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': "rest_framework.pagination.PageNumberPagination",
+    "PAGE_SIZE": 10,
+
+}
